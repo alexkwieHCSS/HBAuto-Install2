@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="36e73264-f71b-4f3f-a776-7c21ce9c649a"
+mode="Global"
+rxversion="8.1">
+	<name>
+		DeleteHBFolder
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="DeleteHBFolder"
+	namespace="HBAuto_Install2">
+	</codegen>
+	<variables>
+		<var
+		id="6a8a0737-fbc0-4113-a706-ee4756edbac3"
+		name="InstallLocation">
+			C:\HeavyBid
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		autogenmethod="True"
+		classname="DeleteHBFolder"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="DeleteHBDirectory"
+		namespace="AutoInstall"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="3bb2f9b2-c27c-4459-83d6-0cbc6121fef2">
+				<argument
+				argname="HBDirectory"
+				id="f50c2872-c9ae-4ee3-bf1b-86eb91679477"
+				variable="InstallLocation">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="3dd6d7ed-d58f-49b6-8edb-0a291b60e8b0"
+	name="HBAuto_Install2Repository"
+	relativepath="HBAuto-Install2Repository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="HBAuto_Install2Repository"
+		namespace="HBAuto_Install2">
+		</codegen>
+		<rootfolder
+		id="3ee3ded7-920f-4216-8ac3-03a745940125"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		DeleteHBFolder.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

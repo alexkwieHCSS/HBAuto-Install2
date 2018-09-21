@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ff25d390-4804-4a49-b059-92f5f0b2613a"
+mode="Global"
+rxversion="8.1">
+	<name>
+		RunWSInstall
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="RunWSInstall"
+	namespace="HBAuto_Install2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+				C.3
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				C:\HeavyBid\WSINST.MSI
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="3dd6d7ed-d58f-49b6-8edb-0a291b60e8b0"
+	name="HBAuto_Install2Repository"
+	relativepath="HBAuto-Install2Repository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="HBAuto_Install2Repository"
+		namespace="HBAuto_Install2">
+		</codegen>
+		<rootfolder
+		id="3ee3ded7-920f-4216-8ac3-03a745940125"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		RunWSInstall.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

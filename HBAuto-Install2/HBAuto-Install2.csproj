@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{5322FE02-66FF-44BE-B16D-243D20F0E793}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HBAuto_Install2</RootNamespace>
+    <AssemblyName>HBAuto-Install2</AssemblyName>
+    <RanorexVersion>8.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildProgramFiles32)\MSBuild\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceptToSHB.cs">
+      <BoundTo>f92a6f8a-6f3f-4645-9d30-f93f95860009</BoundTo>
+      <DependentUpon>AcceptToSHB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c0df0bf6-4b8a-4b99-86ab-309ccb070d42</id>
+    </Compile>
+    <Compile Include="AcceptToSHB.UserCode.cs">
+      <BoundTo>f92a6f8a-6f3f-4645-9d30-f93f95860009</BoundTo>
+      <DependentUpon>AcceptToSHB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b63f2e16-5687-47d3-9481-28f2979ecffc</id>
+    </Compile>
+    <Compile Include="AddRemovePrograms.cs">
+      <BoundTo>f77d7ddd-b4f7-4a23-a584-df2076186b92</BoundTo>
+      <DependentUpon>AddRemovePrograms.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>60ffd8c9-c094-4b88-97b6-976b08296420</id>
+    </Compile>
+    <Compile Include="AddRemovePrograms.UserCode.cs">
+      <BoundTo>f77d7ddd-b4f7-4a23-a584-df2076186b92</BoundTo>
+      <DependentUpon>AddRemovePrograms.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>39065467-4599-4e08-9f6c-811b003e6369</id>
+    </Compile>
+    <Compile Include="AllUsersLogOut.cs">
+      <BoundTo>645d6a8c-242a-4c20-abaf-740dbb5dc99b</BoundTo>
+      <DependentUpon>AllUsersLogOut.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e7e91db-8532-4e6a-ab0a-29e883782cc9</id>
+    </Compile>
+    <Compile Include="AllUsersLogOut.UserCode.cs">
+      <BoundTo>645d6a8c-242a-4c20-abaf-740dbb5dc99b</BoundTo>
+      <DependentUpon>AllUsersLogOut.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4263f167-6e7b-4ac8-8b9e-ab8eb4634a0c</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>05f0d87c-1cc3-4e64-980d-5e6412333054</id>
+    </Compile>
+    <Compile Include="CheckHBConfigFile.cs">
+      <BoundTo>299cf4f9-f50d-4e11-b3e4-5c7d97ce2e39</BoundTo>
+      <DependentUpon>CheckHBConfigFile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d9c9adb-edb6-4667-aa62-55bd0e1e83ef</id>
+    </Compile>
+    <Compile Include="CheckHBConfigFile.UserCode.cs">
+      <BoundTo>299cf4f9-f50d-4e11-b3e4-5c7d97ce2e39</BoundTo>
+      <DependentUpon>CheckHBConfigFile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6865be65-78c7-4739-85c8-1d386696841f</id>
+    </Compile>
+    <Compile Include="CloseHBPrompt.cs">
+      <BoundTo>6377448e-2f2a-4bfd-9a1a-69180728fb12</BoundTo>
+      <DependentUpon>CloseHBPrompt.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dfc1d86-d2aa-46e4-ac87-368e7b702997</id>
+    </Compile>
+    <Compile Include="CloseHBPrompt.UserCode.cs">
+      <BoundTo>6377448e-2f2a-4bfd-9a1a-69180728fb12</BoundTo>
+      <DependentUpon>CloseHBPrompt.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>336a4474-5257-4c7d-a290-94f22c654051</id>
+    </Compile>
+    <Compile Include="ConfirmHBInstallUpdate.cs">
+      <BoundTo>47967cf3-dc5a-4e8d-9d77-920b99d4cb41</BoundTo>
+      <DependentUpon>ConfirmHBInstallUpdate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>004a4188-7cc5-4c95-acb9-643cd39ead62</id>
+    </Compile>
+    <Compile Include="ConfirmHBInstallUpdate.UserCode.cs">
+      <BoundTo>47967cf3-dc5a-4e8d-9d77-920b99d4cb41</BoundTo>
+      <DependentUpon>ConfirmHBInstallUpdate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9b9eee8-c40b-4a68-85fa-16997e7e99f7</id>
+    </Compile>
+    <Compile Include="DeleteHBFolder.cs">
+      <BoundTo>e23dd941-8ed8-4376-b54a-af193aba18a6</BoundTo>
+      <DependentUpon>DeleteHBFolder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ef57f9ce-854d-4848-8e93-c79a71f807ad</id>
+    </Compile>
+    <Compile Include="DeleteHBFolder.UserCode.cs">
+      <BoundTo>e23dd941-8ed8-4376-b54a-af193aba18a6</BoundTo>
+      <DependentUpon>DeleteHBFolder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a230823f-c4d6-44c5-854c-e8c8c907683b</id>
+    </Compile>
+    <Compile Include="HBAuto-Install2Repository.cs">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <DependentUpon>HBAuto-Install2Repository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>c5487ee5-0299-4df4-bc51-a4e5949d743c</id>
+    </Compile>
+    <Compile Include="InstallOrUpdate.cs">
+      <BoundTo>872d64cb-ba58-4650-ab72-24c86cadb0b3</BoundTo>
+      <DependentUpon>InstallOrUpdate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1965afff-00ab-4f15-97ee-b67498b69529</id>
+    </Compile>
+    <Compile Include="InstallOrUpdate.UserCode.cs">
+      <BoundTo>872d64cb-ba58-4650-ab72-24c86cadb0b3</BoundTo>
+      <DependentUpon>InstallOrUpdate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>264de28b-5752-434b-8ed4-646f7073490e</id>
+    </Compile>
+    <Compile Include="OpenInstallFile.cs">
+      <BoundTo>7914ee86-59ca-4f28-be49-231efd2204fa</BoundTo>
+      <DependentUpon>OpenInstallFile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ddec9101-1dd0-48bf-a232-8fd32964a487</id>
+    </Compile>
+    <Compile Include="OpenInstallFile.UserCode.cs">
+      <BoundTo>7914ee86-59ca-4f28-be49-231efd2204fa</BoundTo>
+      <DependentUpon>OpenInstallFile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9984d47a-5691-4c3d-97d7-f8b136489a08</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>5f837530-3f1d-4bc2-8b98-986341cdc064</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>94cc92b9-cc59-4c64-80e3-112931c814ef</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d1546d05-6dc6-4847-aa48-cd9c8bdf0e77</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>94cc92b9-cc59-4c64-80e3-112931c814ef</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fd1aba9f-3eb3-4c58-ac17-d44eca525885</id>
+    </Compile>
+    <Compile Include="RunWSInstall.cs">
+      <BoundTo>a90c5ca7-04b1-48ef-b3b9-20b69229a429</BoundTo>
+      <DependentUpon>RunWSInstall.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2995ae9c-2ac0-48b6-8399-2ece8cd5e981</id>
+    </Compile>
+    <Compile Include="RunWSInstall.UserCode.cs">
+      <BoundTo>a90c5ca7-04b1-48ef-b3b9-20b69229a429</BoundTo>
+      <DependentUpon>RunWSInstall.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7133edeb-856c-4a1e-a9aa-c956c21f91c1</id>
+    </Compile>
+    <Compile Include="SQLDriverReadmeExists.cs">
+      <BoundTo>95785f2b-eca8-415f-951d-5d41700c237d</BoundTo>
+      <DependentUpon>SQLDriverReadmeExists.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>de5dad30-ac08-4118-81ed-f2c136ce1410</id>
+    </Compile>
+    <Compile Include="SQLDriverReadmeExists.UserCode.cs">
+      <BoundTo>95785f2b-eca8-415f-951d-5d41700c237d</BoundTo>
+      <DependentUpon>SQLDriverReadmeExists.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f51a36ea-1d29-437a-be22-54b543bf3f2b</id>
+    </Compile>
+    <Compile Include="SysConfigDoesntExist.cs">
+      <BoundTo>58479876-d8f9-40bb-90b2-78d740de5761</BoundTo>
+      <DependentUpon>SysConfigDoesntExist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c71fcaa-f625-49de-a393-0009557a0021</id>
+    </Compile>
+    <Compile Include="SysConfigDoesntExist.UserCode.cs">
+      <BoundTo>58479876-d8f9-40bb-90b2-78d740de5761</BoundTo>
+      <DependentUpon>SysConfigDoesntExist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72aed0eb-98a0-4a74-8a07-9aeebaccd13e</id>
+    </Compile>
+    <Compile Include="UninstallCrystal.cs">
+      <BoundTo>e8bd4d3f-ac1f-48bb-8c93-02ccf001b318</BoundTo>
+      <DependentUpon>UninstallCrystal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99c46321-e917-4dea-b90b-9254861c775b</id>
+    </Compile>
+    <Compile Include="UninstallCrystal.UserCode.cs">
+      <BoundTo>e8bd4d3f-ac1f-48bb-8c93-02ccf001b318</BoundTo>
+      <DependentUpon>UninstallCrystal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b68f9be-5640-43bf-a62b-33fab93ff2c5</id>
+    </Compile>
+    <Compile Include="UninstallHB.cs">
+      <BoundTo>37d05947-15f6-4be6-98c4-80eabe52c9c5</BoundTo>
+      <DependentUpon>UninstallHB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>603b23bb-e490-4fdb-bebe-7a1d02b0f897</id>
+    </Compile>
+    <Compile Include="UninstallHB.UserCode.cs">
+      <BoundTo>37d05947-15f6-4be6-98c4-80eabe52c9c5</BoundTo>
+      <DependentUpon>UninstallHB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa384bfd-b02e-4c5c-9f67-f29bd03a586f</id>
+    </Compile>
+    <Compile Include="UninstallSQL.cs">
+      <BoundTo>776a3d05-699e-4f6d-9eb0-20a10144ef2c</BoundTo>
+      <DependentUpon>UninstallSQL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2a0e7372-750e-4b58-b850-a4395c186467</id>
+    </Compile>
+    <Compile Include="UninstallSQL.UserCode.cs">
+      <BoundTo>776a3d05-699e-4f6d-9eb0-20a10144ef2c</BoundTo>
+      <DependentUpon>UninstallSQL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f7ca26f-d64d-4afa-9440-2043ff469dda</id>
+    </Compile>
+    <Compile Include="ValidateHBStrayDate.cs">
+      <BoundTo>ff8c8a33-e72b-437d-b6e3-93b68ecc4b34</BoundTo>
+      <DependentUpon>ValidateHBStrayDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f9e4eaf-9fc4-4bf5-9d28-edb05d47bddc</id>
+    </Compile>
+    <Compile Include="ValidateHBStrayDate.UserCode.cs">
+      <BoundTo>ff8c8a33-e72b-437d-b6e3-93b68ecc4b34</BoundTo>
+      <DependentUpon>ValidateHBStrayDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d093ee94-35fb-4ca2-b50d-37007cc56a02</id>
+    </Compile>
+    <Compile Include="ValidateHBWSStrayDate.cs">
+      <BoundTo>80b867a9-d8df-4646-801d-0e49d262e8b4</BoundTo>
+      <DependentUpon>ValidateHBWSStrayDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>afe7a9dc-bad6-405a-b7fe-2f44a92cd028</id>
+    </Compile>
+    <Compile Include="ValidateHBWSStrayDate.UserCode.cs">
+      <BoundTo>80b867a9-d8df-4646-801d-0e49d262e8b4</BoundTo>
+      <DependentUpon>ValidateHBWSStrayDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7662f4fc-64ca-4c40-9b1e-b0ef74621b75</id>
+    </Compile>
+    <Compile Include="ValidateWSBin.cs">
+      <BoundTo>5cc6c2fa-79a2-4418-9ddf-a95715777c0c</BoundTo>
+      <DependentUpon>ValidateWSBin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>34713943-ed54-46ec-acbd-c75cb4638b40</id>
+    </Compile>
+    <Compile Include="ValidateWSBin.UserCode.cs">
+      <BoundTo>5cc6c2fa-79a2-4418-9ddf-a95715777c0c</BoundTo>
+      <DependentUpon>ValidateWSBin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc7bbf7a-c473-48e4-981b-6ed38f7a5dbc</id>
+    </Compile>
+    <Compile Include="ValidateXMLInstanceKey.cs">
+      <BoundTo>b3772968-27d1-4241-8684-ac0f8c4e717d</BoundTo>
+      <DependentUpon>ValidateXMLInstanceKey.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>66b3b9c3-217f-4276-a637-f4521f5043a4</id>
+    </Compile>
+    <Compile Include="ValidateXMLInstanceKey.UserCode.cs">
+      <BoundTo>b3772968-27d1-4241-8684-ac0f8c4e717d</BoundTo>
+      <DependentUpon>ValidateXMLInstanceKey.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acabe1ec-fd1b-4c29-a69d-d474064cd606</id>
+    </Compile>
+    <Compile Include="VerifyServerReleaseVersion.cs">
+      <BoundTo>105dc74e-1e7c-412f-81c1-2b4f17121c45</BoundTo>
+      <DependentUpon>VerifyServerReleaseVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ffec5623-ea9a-4f70-ba59-bee8a5d12638</id>
+    </Compile>
+    <Compile Include="VerifyServerReleaseVersion.UserCode.cs">
+      <BoundTo>105dc74e-1e7c-412f-81c1-2b4f17121c45</BoundTo>
+      <DependentUpon>VerifyServerReleaseVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>384ea6bd-3d94-4567-a8f3-9827cca6ab84</id>
+    </Compile>
+    <Compile Include="VerifyWSReleaseVersion.cs">
+      <BoundTo>c45adcf8-1fd2-44ed-94b4-4e06a78a3017</BoundTo>
+      <DependentUpon>VerifyWSReleaseVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1c2c373e-9259-4c7c-a1de-d459f7829776</id>
+    </Compile>
+    <Compile Include="VerifyWSReleaseVersion.UserCode.cs">
+      <BoundTo>c45adcf8-1fd2-44ed-94b4-4e06a78a3017</BoundTo>
+      <DependentUpon>VerifyWSReleaseVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fc1095b0-94b1-472d-a5f4-7c0fb6f04a3a</id>
+    </Compile>
+    <Compile Include="WSInstallDestination.cs">
+      <BoundTo>9ce6d870-c911-4708-bd07-58793728fa6e</BoundTo>
+      <DependentUpon>WSInstallDestination.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72dc3e5c-0750-4bca-8afd-ddf3a6b9ab72</id>
+    </Compile>
+    <Compile Include="WSInstallDestination.UserCode.cs">
+      <BoundTo>9ce6d870-c911-4708-bd07-58793728fa6e</BoundTo>
+      <DependentUpon>WSInstallDestination.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a6cbbd67-575c-4c4e-8d49-4bf3c362f47d</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AcceptToSHB.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>f92a6f8a-6f3f-4645-9d30-f93f95860009</id>
+      <recordtableid>05948300-da9e-4da5-bb24-39954b3c880a</recordtableid>
+    </None>
+    <None Include="AddRemovePrograms.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>f77d7ddd-b4f7-4a23-a584-df2076186b92</id>
+      <recordtableid>7f9be32a-5d69-4ac2-8beb-61b9ac3094db</recordtableid>
+    </None>
+    <None Include="AllUsersLogOut.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>645d6a8c-242a-4c20-abaf-740dbb5dc99b</id>
+      <recordtableid>f9e3f66c-f4b6-437a-8ff7-76b8360cfff3</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>2011f2f0-6443-4cb7-a476-13b23a026f45</id>
+    </None>
+    <None Include="CheckHBConfigFile.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>299cf4f9-f50d-4e11-b3e4-5c7d97ce2e39</id>
+      <recordtableid>4d6370b1-7e3b-4838-b3d0-453fe250f736</recordtableid>
+    </None>
+    <None Include="CloseHBPrompt.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>6377448e-2f2a-4bfd-9a1a-69180728fb12</id>
+      <recordtableid>c5966994-3030-4032-bb9a-741d633deff0</recordtableid>
+    </None>
+    <None Include="ConfirmHBInstallUpdate.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>47967cf3-dc5a-4e8d-9d77-920b99d4cb41</id>
+      <recordtableid>5c4bcb30-1bc7-4d62-9bdd-a7908e787aa7</recordtableid>
+    </None>
+    <None Include="DeleteHBFolder.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>e23dd941-8ed8-4376-b54a-af193aba18a6</id>
+      <recordtableid>36e73264-f71b-4f3f-a776-7c21ce9c649a</recordtableid>
+    </None>
+    <None Include="HBAuto-Install2Repository.rximg">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <DependentUpon>HBAuto-Install2Repository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>eb73f4b5-b200-4f6e-88ce-1939956c7c1f</id>
+    </None>
+    <None Include="HBAuto-Install2Repository.rxrep">
+      <id>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</id>
+      <repoid>3dd6d7ed-d58f-49b6-8edb-0a291b60e8b0</repoid>
+      <reporootid>3ee3ded7-920f-4216-8ac3-03a745940125</reporootid>
+    </None>
+    <None Include="InstallOrUpdate.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>872d64cb-ba58-4650-ab72-24c86cadb0b3</id>
+      <recordtableid>22e051e9-ceb2-44e5-9222-da67b077d79e</recordtableid>
+    </None>
+    <None Include="OpenInstallFile.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>7914ee86-59ca-4f28-be49-231efd2204fa</id>
+      <recordtableid>57332bd2-c73b-42c8-aff6-f47800257abd</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>94cc92b9-cc59-4c64-80e3-112931c814ef</id>
+      <recordtableid>726bf730-426f-4c94-bdfd-421c36a7b69e</recordtableid>
+    </None>
+    <None Include="RunWSInstall.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>a90c5ca7-04b1-48ef-b3b9-20b69229a429</id>
+      <recordtableid>ff25d390-4804-4a49-b059-92f5f0b2613a</recordtableid>
+    </None>
+    <None Include="SQLDriverReadmeExists.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>95785f2b-eca8-415f-951d-5d41700c237d</id>
+      <recordtableid>d97aed99-988f-426a-914d-cb5736b92c5d</recordtableid>
+    </None>
+    <None Include="SysConfigDoesntExist.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>58479876-d8f9-40bb-90b2-78d740de5761</id>
+      <recordtableid>7db5b83b-d85b-48de-b23d-b32d41e77ef2</recordtableid>
+    </None>
+    <None Include="UninstallCrystal.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>e8bd4d3f-ac1f-48bb-8c93-02ccf001b318</id>
+      <recordtableid>20a44fde-5665-4145-8f45-3ec91aa3b9dc</recordtableid>
+    </None>
+    <None Include="UninstallHB.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>37d05947-15f6-4be6-98c4-80eabe52c9c5</id>
+      <recordtableid>aeb16780-eaa5-4bdc-8a60-f7b5e29157b7</recordtableid>
+    </None>
+    <None Include="UninstallSQL.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>776a3d05-699e-4f6d-9eb0-20a10144ef2c</id>
+      <recordtableid>5ecc28e7-749e-4b4c-bc42-bb73720fb99f</recordtableid>
+    </None>
+    <None Include="ValidateHBStrayDate.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>ff8c8a33-e72b-437d-b6e3-93b68ecc4b34</id>
+      <recordtableid>a7c6f620-6a10-4d20-a1c6-a8c8ef465963</recordtableid>
+    </None>
+    <None Include="ValidateHBWSStrayDate.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>80b867a9-d8df-4646-801d-0e49d262e8b4</id>
+      <recordtableid>3ed8b205-3829-4caf-aae8-42d48ba70417</recordtableid>
+    </None>
+    <None Include="ValidateWSBin.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>5cc6c2fa-79a2-4418-9ddf-a95715777c0c</id>
+      <recordtableid>ff6fefc5-bfbb-4b90-a7ba-333f0a68bad7</recordtableid>
+    </None>
+    <None Include="ValidateXMLInstanceKey.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>b3772968-27d1-4241-8684-ac0f8c4e717d</id>
+      <recordtableid>0f05ee35-245f-4839-b4e0-c9a7253b532f</recordtableid>
+    </None>
+    <None Include="VerifyServerReleaseVersion.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>105dc74e-1e7c-412f-81c1-2b4f17121c45</id>
+      <recordtableid>3841cd9d-5385-4d43-8725-bda4f9cb39a8</recordtableid>
+    </None>
+    <None Include="VerifyWSReleaseVersion.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>c45adcf8-1fd2-44ed-94b4-4e06a78a3017</id>
+      <recordtableid>2622a06d-20b1-43fe-b596-f68586060b26</recordtableid>
+    </None>
+    <None Include="WSInstallDestination.rxrec">
+      <BoundTo>c4dbeea2-e61b-4c3a-aadf-c237bc595b75</BoundTo>
+      <id>9ce6d870-c911-4708-bd07-58793728fa6e</id>
+      <recordtableid>65b706fb-2484-40a5-ad80-f5abda2b41d7</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HBAuto-Install2.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d5e273c8-fd9f-4fed-b5ed-507a0f8f95dc</id>
+    </Content>
+    <Content Include="HBAuto-Install2.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e2a647d5-fb49-4dae-acc6-a2f1653ded9f</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="184a880a1f7dd4cb"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="9/6/2018 3:09:06 PM"
+		timestampiso="2018-09-06T20:09:06"
+		endtime="9/6/2018 3:09:12 PM"
+		timeoutfactor="1.3"
+		module="ConfirmHBInstallUpdate">
+		<detail>
+			ConfirmHBInstallUpdate
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.214"
+			timeRelativeToTestModuleStartTime="00:03.215"
+			timeWallClock="15:09:09"
+			time="00:03.214"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>YearVersion, HBInstallLocation
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.250"
+			timeRelativeToTestModuleStartTime="00:03.251"
+			timeWallClock="15:09:09"
+			time="00:03.250"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'ConvertMultipleEstimates.CancelButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'Convert' and @title~'Multiple' and @title~'Estimate']//button[@text='Cancel']"
+				itempath=".//button[@text='Cancel']"
+				fullname="HBAuto_Install2Repository.ConvertMultipleEstimates.CancelButton"
+				id="84141456f52442a79fa065c0775b3b8b"
+				timeout="78000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HBAuto-Install2\HBAuto-Install2\ConfirmHBInstallUpdate.cs"
+				codeline="108"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

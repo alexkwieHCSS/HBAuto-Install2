@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="HBAuto-Install2"
+      id="9ae8386f-76b3-49fd-bb0f-ff91f58542f1"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="HBAuto-Install2"
+      id="9ae8386f-76b3-49fd-bb0f-ff91f58542f1"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

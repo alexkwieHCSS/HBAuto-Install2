@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c5966994-3030-4032-bb9a-741d633deff0"
+mode="Global"
+rxversion="8.1">
+	<name>
+		CloseHBPrompt
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseHBPrompt"
+	namespace="HBAuto_Install2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="23a5128f-4f2a-4084-9a6a-cde853f6b59b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="600bc51d-dfa7-4c2d-aa6c-1af6b5838c19"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='Heavybid']/button[@text='OK']
+				</path>
+			</info>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="3dd6d7ed-d58f-49b6-8edb-0a291b60e8b0"
+	name="HBAuto_Install2Repository"
+	relativepath="HBAuto-Install2Repository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="HBAuto_Install2Repository"
+		namespace="HBAuto_Install2">
+		</codegen>
+		<rootfolder
+		id="3ee3ded7-920f-4216-8ac3-03a745940125"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseHBPrompt.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

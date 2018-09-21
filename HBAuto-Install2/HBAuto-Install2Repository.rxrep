@@ -1,0 +1,585 @@
+﻿<repository
+id="3dd6d7ed-d58f-49b6-8edb-0a291b60e8b0"
+name="HBAuto_Install2Repository"
+rxversion="8.1">
+	<codegen
+	classname="HBAuto_Install2Repository"
+	namespace="HBAuto_Install2">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="3ee3ded7-920f-4216-8ac3-03a745940125"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="9c66c658-82ce-4ae5-90ec-bf2630d207b0"
+		isrooted="True"
+		name="HeavyBidServerSetup"
+		refimgid="7b10a580-4bd5-4584-80e4-84fc2645a071"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="form"
+			id="21d0d719-2109-45b3-8f57-f23d927dc5b9"
+			isrooted="False"
+			name="Buttons"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,nativewindow"
+				capname="button"
+				id="9fe2014f-e363-456a-bf7c-35c0c84bac7c"
+				name="NextButton"
+				refimgid="614d602f-85e1-4d15-b5fb-028e857af536"
+				searchtimeout="30000ms">
+					/form[@title~'HeavyBid' and @title~'Setup']/button[@text~'Next']
+				</item>
+				<item
+				capname="button"
+				id="c5c720fd-3d5a-4efc-b06e-909f6947d431"
+				name="OkButton"
+				searchtimeout="30000ms">
+					/form[@title~'HeavyBid' and @title~'Setup']/button[@text~'OK']
+				</item>
+			</folder>
+			<folder
+			capname="form"
+			id="2d05e46e-24c0-40df-b180-45954e901db1"
+			isrooted="False"
+			name="TextContainersForValidation"
+			searchtimeout="0ms">
+				<folder
+				capname="form"
+				id="a628127c-e21c-4155-a99f-76dc80416636"
+				isrooted="False"
+				name="WelcomeScreen"
+				searchtimeout="0ms">
+					<item
+					capname="text"
+					id="c0dd66b9-7a87-4b02-9101-38f62316244f"
+					name="TitleText"
+					refimgid="d7467429-16b3-47ad-9b17-8c31803a74ad"
+					searchtimeout="30000ms">
+						/form[@title~'HeavyBid' and @title~'Setup']/text[@accessiblerole~'StaticText'][2]
+					</item>
+					<item
+					capname="text"
+					id="d8d670a5-12f8-487a-9154-2f237ca38073"
+					name="MainText"
+					refimgid="77e0db9b-c287-4a86-9bee-975ab10a9af3"
+					searchtimeout="30000ms">
+						/form[@title~'HeavyBid' and @title~'Setup']/text[@accessiblerole~'StaticText'][1]
+					</item>
+				</folder>
+				<item
+				capname="titlebar"
+				id="d7991a93-eac3-47c9-bc8d-af83b1646dbe"
+				name="Titlebar"
+				refimgid="920da892-67a1-4497-81e9-30e3b52ff451"
+				searchtimeout="30000ms">
+					/form[@title~'HeavyBid' and @title~'Setup']/titlebar
+				</item>
+			</folder>
+			<item
+			capname="titlebar"
+			id="35bf72d1-45be-4453-9819-3d2d323b1b63"
+			name="Titlebar"
+			refimgid="cf5feaed-7331-4d2c-9216-ad59bf266bcb"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/titlebar
+			</item>
+			<item
+			capname="text"
+			id="7981f32a-02cb-4ba9-9c4a-0177f8be1a32"
+			name="TitleText"
+			refimgid="30939a69-998c-404c-981b-b00c74ae7006"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/text[@accessiblerole~'StaticText'][2]
+			</item>
+			<item
+			capname="text"
+			id="b84dd048-102c-4a61-8186-92104482d0e5"
+			name="MainText"
+			refimgid="69730a42-376a-45f1-9ac1-206de4468baf"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/text[@accessiblerole~'StaticText'][1]
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="a2075e6e-eeac-4628-9811-a556dc9c6496"
+			name="NextButton"
+			refimgid="59f44b29-8786-416b-829d-6fc71d5a3e7f"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/button[@text~'Next']
+			</item>
+			<item
+			addcaps="checkbox,nativewindow"
+			capname="checkbox"
+			id="0eb1a8d3-4498-449a-abb3-dce214c16a4e"
+			name="IAcceptTheTermsInTheLicenseAgreem"
+			refimgid="eb1f895b-fca6-43df-853e-c7685afffc55"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/checkbox[@text~'terms']
+			</item>
+			<item
+			addcaps="radiobutton,nativewindow"
+			capname="radiobutton"
+			id="449b2c02-4d5e-4d8a-90d2-b225684194de"
+			name="StandaloneInstallType"
+			refimgid="b1a6d6a4-8cc1-455a-b57e-0aabfec67802"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/?/?/radiobutton[@text~'Standalone']
+			</item>
+			<item
+			addcaps="radiobutton,nativewindow"
+			capname="radiobutton"
+			id="00c47a49-1db2-4aad-9b8a-3eab2bf98638"
+			name="MultiUserInstallType"
+			refimgid="e0039867-8bf4-4807-bec5-14f507c81dc0"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/?/?/radiobutton[@text~'Multi-user']
+			</item>
+			<item
+			addcaps="radiobutton,nativewindow"
+			capname="radiobutton"
+			id="dbad87df-3fd8-4bc1-9541-b7c60e72fa06"
+			name="TrainingInstallType"
+			refimgid="1586d3f6-7d50-496a-9801-47ec829eb81a"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/?/?/radiobutton[@text~'Training']
+			</item>
+			<item
+			capname="radiobutton"
+			id="e6a51ee8-67a2-4082-be9b-b514ec14d9fd"
+			name="UpdateTo"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/?/?/radiobutton[@text~'Update']
+			</item>
+			<item
+			capname="text"
+			id="ec43ca31-f9f3-442d-8db1-fb90bd3baee3"
+			name="ConfirmFilepathTextbox"
+			refimgid="73b3baaa-e373-4d37-9367-63cbac703b5f"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/text[@text~'install HeavyBid in:']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="9c99b1a2-54ec-4e70-8da6-e901a590d643"
+			name="UpdateButton"
+			refimgid="4fe8dd6a-7160-4379-9b92-a4483dcf39c9"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/button[@text~'Update']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="a7259cce-3e74-4465-8f9d-93f01197f353"
+			name="FinishButton"
+			refimgid="47b75ba4-7132-4acb-8ac7-8415684aa3d7"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/button[@text~'Finish']
+			</item>
+			<item
+			capname="text"
+			id="bde8679d-1119-4c02-a1b5-1be2598c2963"
+			name="FilepathTextbox"
+			refimgid="d8e06953-5d5e-4c3b-bd60-7b2c0ad5de9f"
+			searchtimeout="30000ms">
+				/form[@title~'HeavyBid' and @title~'Setup']/text[@accessiblerole='Text']
+			</item>
+			<basepath>
+				/form[@title~'HeavyBid' and @title~'Setup']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAclJREFUOE+VkkFrGkEYhvcH7F326MWTB8GLgnQLXkVFyMGDKItEz3vo
+qTBny2okQcNCDiG6FWkMZdFQ0HTA0NveUujePIg/oP6Bt/ON0STqlvaFF2Zm532+7xtWCVI4HMZ0
+Og10s9mEuEY+rnQ6DcY44qccEZNDp/Xzns57vd6/AYo+wLAxrTXH/z/AflixvWAAzT2fz6VfA16H
+I+b6OIDC9Xod5XIZ73V9B9DE/FrRhZL5DFV3ocX33qBare6qttttGe5fX0vAYrEI9JsOTNMEOZlM
+yjCZOiJIkLPZLPL5/AZA1UmMsR2gVCrh6n6Ih4dPGA4/oNvtYjQa7bqlLgh0ALiybZyfneHd5VcU
+HQfrtQXPO8WdCLcsC6lUCpVKBbPZTHZ5AOhcXKDRaCDje9AdDovb4NzC3e0tVqsVcrncdvZNmDSZ
+TORHegcCtFotfPnxDYy7UONxRKNR/Hx6giM6qtVqL8Gt9gGdTkdU5XBdF7FYDIlEAuPxGIPBQN55
+jr1oH2AYhgzTnL5vIyLW33//wnK5RKFQ+DuAHiYUCqHf7+Px8V6c28h44g8UEOY5UFX1ECBEh1tL
+EcQwTnBz8xFFi0HTM0fCivIHCB395/gPLToAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="91d0eedc-616b-4906-ab8f-663e09e1d2b0"
+		isrooted="True"
+		name="ConvertMultipleEstimates"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="09595a73-8e4c-4b44-9041-cabe260f660c"
+			name="ConvertButton"
+			searchtimeout="30000ms">
+				/form[@title~'Convert' and @title~'Multiple' and @title~'Estimate']//button[@text='Convert']
+			</item>
+			<item
+			capname="button"
+			id="84141456-f524-42a7-9fa0-65c0775b3b8b"
+			name="CancelButton"
+			searchtimeout="30000ms">
+				/form[@title~'Convert' and @title~'Multiple' and @title~'Estimate']//button[@text='Cancel']
+			</item>
+			<basepath>
+				/form[@title~'Convert' and @title~'Multiple' and @title~'Estimate']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="7b35272b-0f7e-4744-9841-fb5b2c0b875d"
+		isrooted="True"
+		name="HeavyBidPopup"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="button"
+			id="600bc51d-dfa7-4c2d-aa6c-1af6b5838c19"
+			name="OKButton"
+			searchtimeout="30000ms">
+				/form[@title='Heavybid']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Heavybid']
+			</basepath>
+		</appfolder>
+		<folder
+		capname="host"
+		id="588390a4-0599-4f61-8881-14ed2ef9d0fb"
+		isrooted="False"
+		name="ExcelRelated"
+		searchtimeout="0ms">
+			<appfolder
+			capname="form"
+			id="aa474a8a-f67a-40a0-a744-9d6188454193"
+			isrooted="True"
+			name="Excel"
+			refimgid="d9ac9972-65b0-461f-9e4d-172bc98a617e"
+			refpath="/form[@processname='EXCEL']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="cell"
+				id="b52d5b97-1968-4b6a-9e93-0997d8ee55d4"
+				name="CellA1"
+				searchtimeout="30000ms">
+					/form[@processname='EXCEL']//table/row[@index='1']/cell[@address='A1']
+				</item>
+				<item
+				capname="cell"
+				id="2231ddf1-0113-4f7f-9319-cfad9d6885b2"
+				name="CellC10"
+				searchtimeout="30000ms">
+					/form[@processname='EXCEL']//table/row[@index='10']/cell[@address='C10']
+				</item>
+				<item
+				capname="cell"
+				id="c9b2f593-ec0c-4a68-8ae5-7fa22ea995e3"
+				name="CellC12"
+				searchtimeout="30000ms">
+					/form[@processname='EXCEL']//table/row[@index='12']/cell[@address='C12']
+				</item>
+				<item
+				addcaps="cell,excelrange"
+				capname="cell"
+				id="7cbacd22-8b54-4eb4-a5da-459b809b2f92"
+				name="CellA2"
+				refimgid="d2726500-a6ee-4f6e-96aa-9332a00357ae"
+				searchtimeout="30000ms">
+					/form[@processname='EXCEL']//table/row[@index='2']/cell[@address='A2']
+				</item>
+				<item
+				addcaps="cell,excelrange"
+				capname="cell"
+				id="9c4c1e1d-9152-4c45-88ae-046cc0c00de4"
+				name="CellB2"
+				refimgid="295ac392-56d0-4759-bac4-12b60cd1d92f"
+				searchtimeout="30000ms">
+					/form[@processname='EXCEL']//table/row[@index='2']/cell[@address='B2']
+				</item>
+				<basepath>
+					/form[@processname='EXCEL']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAu1JREFUOE+dk2tIk2EUx0ciRREVEglZZCJdSJ3T+S6lmaaLmXnLD5pG
+iaagCYaRtowkLSl0aTqJBZohpZBKWXYXQ4k05/A2KdAlWrqxFEWZ8/bvPM+yz9GBw8v58P+dc/7P
+eUVrEVUpKKM1Qnm0RjYQUyGbj66QIbJchpNlAsLuClCUCAi+4wd5kRT+hVL45UvhnecLu1gjxFxt
+TDN3jrRhxjqN1dVV/Et4qAjAOjPx9PwvWJesMM+ZMTw1jCHzEAyUg2YD5SD6TQOU/egzU9KXxYEc
+H4jY2KwzEzORQhuAiOoAxD8+CsucBQuLNuRU3YRPygmeKu1tWG0LsC0twv2ShAFkA2xs1pkBmg2N
+SKg7gpQGObRd19E/MvRXHKU6z8Us2ZquWQRghrFibWw2btmnXFxsCULu2yBEFCrhnRzGAd8nxrn4
+69Q3vsKuTG8CaGS8sIsNfD/dZDeK2mNR2B6C/NYQ+KQqoK7XcvHcwjze/2jlGud0AkTRc7Fghg2Y
+BqE39aJ7Ugf1xwKoO0NxrzsUlxvCsbyySHvb8GLsFV6Oveaa7WliiCLKBV7Yu/dR9x58nuiCc2oo
+EqoCoe09ThAF9BPNWF5dRLdFh6bR51yzNYUmCC+1A9a6f6Hup2oyIEqSwCHRF2WdkSihSSq6EjC7
+YMHSig31o0+5ZnMSTaBU2wHsnfUmPep6n8BFtR9OOQexTSXHN0sneXEMeR+CUaPP54BZ2wzXbDzn
+BZGi2A5gB6IjQHSlF+TFbvC44Y6dVw5BeT8dTYZSZNGrpDUFosP4hnuxvLKM9WcIwO6bA8h9TXs2
+Ump2I+6BKwJL3LA3bx8Ol8TSeU+hqC0DZ+uDkfkskR+XldIxgQDyW38ANEHPpJ4b2P6zA+/GW9FC
+bjPD6kcbUGusw0NjLaqNj/iXxbp4T4j8C6S8+J8QxRFAyPeF5JovPFU+/Odwz5ZgD52oywVv7EgX
+wylVjC3JYmwiwzbQzo6JXnA4TUImjvPEb1Nj43ubCvUMAAAAAElFTkSuQmCC
+				</icon>
+			</appfolder>
+			<appfolder
+			capname="form"
+			id="f48a685f-8cc7-4ef4-b8cf-2f3f2fc9a741"
+			isrooted="True"
+			name="ExcelXMLPopup"
+			refimgid="7e345e57-9460-46a5-a984-21704b09e58b"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="button"
+				id="a55dfa27-558b-4460-b646-b85648c70232"
+				name="OKButton"
+				refimgid="ad82c8da-d756-4953-889a-da9d6b3bec8e"
+				searchtimeout="30000ms">
+					/form[@title='Microsoft Excel']/button[@text='OK']
+				</item>
+				<item
+				capname="button"
+				id="38ca34f7-fc65-416c-9295-d0dc227fad4b"
+				name="DontSaveButton"
+				searchtimeout="30000ms">
+					/form[@title='Microsoft Excel']//button[@name='Don''t Save']
+				</item>
+				<basepath>
+					/form[@title='Microsoft Excel']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+				</icon>
+			</appfolder>
+			<appfolder
+			capname="form"
+			id="f34ef747-2ac3-4288-93a4-92863164c2c2"
+			isrooted="True"
+			name="OpenXML"
+			refimgid="c30a0ee6-52b7-4559-868a-94f1372da400"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="radiobutton"
+				id="ed3fd7f5-7a5b-412a-beb4-91dd89adb1a0"
+				name="xmlTable"
+				refimgid="2c0abf8c-70e8-43f7-9989-98786d9d4e0e"
+				searchtimeout="30000ms">
+					/form[@title='Open XML']/radiobutton[@accessiblename='As an XML table']
+				</item>
+				<item
+				capname="button"
+				id="dc49d84c-6e05-40b9-ab75-b72431db3a16"
+				name="OKButton"
+				refimgid="f1b63a4a-ff74-4539-af7d-1ddd8275da83"
+				searchtimeout="30000ms">
+					/form[@title='Open XML']/button[@text='OK']
+				</item>
+				<basepath>
+					/form[@title='Open XML']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+				</icon>
+			</appfolder>
+		</folder>
+		<appfolder
+		capname="form"
+		id="900ba1a3-8153-4751-8e0d-8cca1362b5c3"
+		isrooted="True"
+		name="ProgramsAndFeatures"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="unknown"
+			id="0b381acf-a7c7-46ee-a3ef-c13bbf56b765"
+			name="SearchEditBox"
+			refimgid="e8dfc52c-5781-44b2-8159-2a3ba0baf2c7"
+			searchtimeout="30000ms">
+				/form[@title~'Programs and Features']/?/?/?/?/element[@class='Search Box']
+			</item>
+			<folder
+			capname="form"
+			id="e000c4a8-6913-4f64-91b6-bad59ca5b9b9"
+			isrooted="False"
+			name="Buttons"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke,uiautomationvalue"
+				capname="button"
+				id="8526e365-08b1-42f7-a7d9-fcae686aa8db"
+				name="UninstallButton"
+				refimgid="329ec456-db87-4575-9d6a-ff8ed221d95e"
+				searchtimeout="30000ms">
+					/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar/button[@text~'Uninstall']
+				</item>
+				<item
+				addcaps="button,nativewindow"
+				capname="button"
+				id="06b2be20-04ca-41c3-8491-bfb80bd884a9"
+				name="YesButton"
+				refimgid="74dbfe1e-327a-42bb-adc3-5110242071b0"
+				searchtimeout="30000ms">
+					/form[@title~'Programs and Features']/?/?/element/button[@text='&amp;Yes']
+				</item>
+			</folder>
+			<folder
+			capname="row"
+			id="8148e041-2347-4ff4-a99a-ae2b9d211b29"
+			isrooted="True"
+			name="UninstallProgramTable"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell"
+				capname="cell"
+				id="1900bacc-3b6a-44f6-aafc-486cfa9d8b1b"
+				name="HCSSCrystalXIIntegration"
+				refimgid="cdfb7dde-4096-4d4f-8b9e-41244c8acc21"
+				searchtimeout="30000ms">
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table/row[@index&gt;='0']/cell[@text~'^HCSS\ -\ Crystal\ XI\ Integra']
+				</item>
+				<item
+				addcaps="cell"
+				capname="cell"
+				id="9ea0b998-002d-4d44-821b-b6afc5b721a8"
+				name="MicrosoftSQLServer2012NativeClient"
+				refimgid="606a5355-6d1e-4e61-9697-c0ba45b2ee98"
+				searchtimeout="30000ms">
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table/row[@index&gt;='0']/cell[@text~'^Microsoft\ SQL\ Server\ 2012']
+				</item>
+				<item
+				addcaps="cell"
+				capname="cell"
+				id="1d5967c9-68da-4c64-8967-a67e3d68a2bf"
+				name="HeavyBidWorkstation"
+				refimgid="2415c7da-26f1-422b-aa87-188755acaf74"
+				searchtimeout="30000ms">
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table/row[@index&gt;='0']/cell[@text='HeavyBid Workstation']
+				</item>
+				<basepath>
+					/form[@title~'Programs and Features']//container[@caption='ShellView']/table/row[@index&gt;='0']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="button"
+			id="c515c285-d252-47d9-9f0b-4931f55026d7"
+			name="UninstallButton"
+			refimgid="f30386da-270f-468a-8dab-1e425a8effb3"
+			searchtimeout="30000ms">
+				/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar/button[@text~'Uninstall']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="fc6c435a-bb04-427a-8762-f74839f6c842"
+			name="YesButton"
+			refimgid="246eed54-8b54-44b8-a41c-099c3ff8303d"
+			searchtimeout="30000ms">
+				/form[@title~'Programs and Features']/?/?/element/button[@text='&amp;Yes']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="button"
+			id="ed24880f-0778-420d-ac9f-7ba7c27a81f9"
+			name="ButtinUninstallOrChange"
+			refimgid="ed4d4d6e-50cd-4971-85ee-b9496d1cd317"
+			searchtimeout="30000ms">
+				/form[@title~'Programs and Features']//container[@automationid='FolderLayoutContainer']/container[@classname='Element']/toolbar/button[@text~'Uninstall']
+			</item>
+			<basepath>
+				/form[@title~'Programs and Features']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAxFJREFUOE+Nkl1Mk1cYxwkhISEh4YILMrnhhgtuuCGZ7IYLGzWYWRMn
+BoczwRjHZG4O5geiEdFIvNEJ+FFqa8tHta4ILaMtCEWgr9R2fiArlIpVo040hTnv9OK39znvsus9
+yck5F+f/O//n/J8MqVgs9qPsqVSKhYUFZmdniUajhMNhQqEQwWAQn8+Hx+PB5XLhcDiQ+/qdE7LL
+wS7r/4ptNpvcURoFkFpaWiKZTJJIJIjH48zNzaH9HmEwHECLzihoJBJB0zSmp6eZnJxULv6rxcVF
+ZT/yKMagFsQ6dp32oINfAtfoG7/FE83Jm6lTvJw4zcNQj3L3r9SoW5ofy5iLztFuOkacXFBiO+eH
+bdwfb+HD5Pd8CH3L36O7ee//hseB8wagtrZWDlRVVWE2m6msrMRkMqlVXl5OWVkZpaWllJSUUFxc
+zPvhnfzl3c67/u0GoKamRgHMe4+wre4wza1tDAwN4QsE8Hi9HD/VxpfVtawzV1NUVMTqYBUrv5pJ
+X99oAORlAYjY2d3Du9VV/lxZ4dnyMsnXr/lDj/Zyl5VNW7+msLBQF28m7drAqx6zARDbAjh6so23
+6TQfP30i9eIFM7EYj+bnSejnWT2dg03NFBQUkO5bzxvnesZvXjAA0rMAPAMDvFx+S+r5cyxWG7vq
+DnCl6yoP9DjjT1Pc0OcgPz+fkd59DHuuqblQAPmsz9asoV/vN5F6hqZnLWKTeQc799SjzUSY1wH9
+g17y8vJo6jmL3d2N2+02ABUVFcpB3w03D+Pz3Lv/QL0s4it673fCGlP3Yjh6e8nNzeWQo42TznNq
+KhVAohLA4WMthCNRZnSA//YYvmE/E1PTLCSfMBG+S0PjQXJycmi0n+anq61ccloNgOQsgM3Vu2nv
+vIjXH2QoOMpvI7cZGZ/QIWHaOzpYZ9pAdnY2B6yt/GBpoanrjAGQIRGAacsONn1VQ+OhJiy6davN
+rlZDw89KvPbzL8jKymK/5QT1l4/z3cVmAyATJgAZEslZopLfll16FtvysogzMzOpv3RMies6j+q6
+jIx/AAYUZCW5R6c2AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="82b00af4-ca5f-4ecf-a138-80c06109b889"
+		isrooted="True"
+		name="HeavyBidUninstall"
+		refpath="/form[@title='HeavyBid Uninstall']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="a092a07a-79a3-47bb-8324-7a6c60872151"
+			name="ButtonYes"
+			refimgid="c7133150-50a5-4841-a686-ec826d766016"
+			refpath="/form[@title='HeavyBid Uninstall']/button[@text='&amp;Yes']"
+			searchtimeout="30000ms">
+				/form[@title='HeavyBid Uninstall']/button[@text='&amp;Yes']
+			</item>
+			<basepath>
+				/form[@title='HeavyBid Uninstall']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAoBJREFUOE99j/tP0mEYxUnAW2oJ5NJyXbSJTNRy85LOhPA2L+VCpyIK
+LU0Fa2pqmpmCpKaFaQtvCKKGczZzEaZI05nNWWm1fuyH1j9yer+UqwZ0trNn7/Y+n3Me2t9a74mG
+pek4lltPwdIYjKWbHNjUSbD3CPD7i3tt9sdhWyfCjNwb5ms+2OiNwYeRROzpL8Ku5uPdUNr/Id+s
+DTDJDmKqjI5pKR3PZEwsKvzx9iEfn4wXCDCCAriG/HhzG+ZKfxgkdBgpl3o4plnuiUVlALaHY/Fl
+OgvfV1tcAz6OC2AoY2L2asAvALGJalLOwHylN6xtYfhqjMHWg5OuW2z0RRAAgywxHCdQy2a5F2Yr
+GGQysTWUhc/6OOzqIvF+LN0ZsD4QjzlFMIyyAIwWHsBEsQdJZ8JIwaQMLNT4YWc0DbvTcmwOZjq8
+N1f3B5TMOwq2nydCAr3BDz0EbbMU4lQeEsJZ6K3Lg7IoCfmpXBQIY/H6iWz/jH+aIPkMB/GnWajK
+T4RJdR2PCSQtMgi2iU5Ynt7Bq5F2zGtvQd+tdD6BUkbMMSSFsyHih2BF14pFbSOeE9sNKqyM38Py
+WAfW9F3YWRpxSt8XEsJYjhbalgqY++thn1Q5vEq10LWjTZYN5ZUUtwCaOIULiTAKC48aMKVRONLt
+k11YI3OquxY20uClrsP1cuZlDXLFGhj6OvBiuBlGdQ0MxFZyO1V9hgB7ai+5TxfmdOLseQVCI6SI
+ir8BRVU7TPeVGKgvwWBTGcpF0ZAIeO4BvpxM+HJyiNPhF5SFIyeKEcqtRHh0NUS5d90vUuKeqwYz
+sIi4BD7sbHixCkA/XEreEuJC+HDyEBwmcQGh0X4CN7N3Cn+vSmgAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

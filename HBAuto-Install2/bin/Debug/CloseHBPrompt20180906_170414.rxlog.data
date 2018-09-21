@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.3m"
+		durationms="80613"
+		type="root"
+		rid="1c85310307267f1a"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="alex.kwie"
+		rxversion="8.1.1.0"
+		host="ALEXK-LT"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3840x1080"
+		timestamp="9/6/2018 5:04:19 PM"
+		timestampiso="2018-09-06T22:04:19"
+		endtime="9/6/2018 5:05:40 PM"
+		timeoutfactor="1.3"
+		module="CloseHBPrompt">
+		<detail>
+			CloseHBPrompt
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.118"
+			timeRelativeToTestModuleStartTime="00:03.118"
+			timeWallClock="17:04:22"
+			time="00:03.118"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'HeavyBidPopup.OKButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Heavybid']/button[@text='OK']"
+				itempath="button[@text='OK']"
+				fullname="HBAuto_Install2Repository.HeavyBidPopup.OKButton"
+				id="600bc51ddfa74c2daa6c1af6b5838c19"
+				timeout="78000"
+				codefile="c:\Users\alex.kwie\Documents\Ranorex\RanorexStudio Projects\HBAuto-Install2\HBAuto-Install2\CloseHBPrompt.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:20.613"
+			timeRelativeToTestModuleStartTime="01:20.613"
+			timeWallClock="17:05:40"
+			time="01:20.613"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

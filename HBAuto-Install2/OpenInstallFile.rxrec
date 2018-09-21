@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="57332bd2-c73b-42c8-aff6-f47800257abd"
+mode="Global"
+rxversion="8.1">
+	<name>
+		OpenInstallFile
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenInstallFile"
+	namespace="HBAuto_Install2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="False"
+		optional="False">
+			<comment>
+				B.1 replace with new install file location
+			</comment>
+			<bindings>
+			</bindings>
+			<filename>
+				HeavyBid2018.1_2018-06-12_1447.msi
+			</filename>
+			<workingdir>
+				\\hbprodmgmt\installs\2018.1
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="3dd6d7ed-d58f-49b6-8edb-0a291b60e8b0"
+	name="HBAuto_Install2Repository"
+	relativepath="HBAuto-Install2Repository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="HBAuto_Install2Repository"
+		namespace="HBAuto_Install2">
+		</codegen>
+		<rootfolder
+		id="3ee3ded7-920f-4216-8ac3-03a745940125"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenInstallFile.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

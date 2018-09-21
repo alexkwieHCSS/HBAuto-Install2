@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="726bf730-426f-4c94-bdfd-421c36a7b69e"
+mode="Global"
+rxversion="8.1">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="HBAuto_Install2">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="3dd6d7ed-d58f-49b6-8edb-0a291b60e8b0"
+	name="HBAuto_Install2Repository"
+	relativepath="HBAuto-Install2Repository.rxrep"
+	rxversion="8.1">
+		<codegen
+		classname="HBAuto_Install2Repository"
+		namespace="HBAuto_Install2">
+		</codegen>
+		<rootfolder
+		id="3ee3ded7-920f-4216-8ac3-03a745940125"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

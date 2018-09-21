@@ -1,0 +1,13 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{5322FE02-66FF-44BE-B16D-243D20F0E793}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution HBAuto-Install2[HBAuto-Install2[]]]&#xD;&#xA;Solution HBAuto-Install2\HBAuto-Install2\HBAuto-Install2.rxtst&#xD;&#xA;Solution HBAuto-Install2\HBAuto-Install2\HBAuto-Install2.rxtst" />
+  <StartupProject value="{5322FE02-66FF-44BE-B16D-243D20F0E793}" />
+</Properties>
